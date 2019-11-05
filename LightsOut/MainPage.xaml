@@ -12,6 +12,8 @@
         <Canvas Name="boardCanvas">
 
         </Canvas>
+        <Button Content="About" Click="AboutButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="130,250,10,10"/>
+        <Button Content="New Game" Click="NewGameButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="13,250,0,10" />
 
     </RelativePanel>
 </Page>

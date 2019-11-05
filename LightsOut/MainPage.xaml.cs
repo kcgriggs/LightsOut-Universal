@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,7 +23,6 @@ namespace LightsOut
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    
     public sealed partial class MainPage : Page
     {
         private LightsOutGame game;
@@ -29,7 +30,6 @@ namespace LightsOut
         {
             this.InitializeComponent();
             game = new LightsOutGame();
-            SizeThree.IsChecked = true;
             CreateGrid();
             DrawGrid();
         }
@@ -72,6 +72,8 @@ namespace LightsOut
 
         private void DrawGrid()
         {
+            SolidColorBrush black = new SolidColorBrush(Windows.UI.Colors.Black);
+            SolidColorBrush white = new SolidColorBrush(Windows.UI.Colors.White);
             int index = 0;
 
             // Set the colors of the rectangles
@@ -85,20 +87,20 @@ namespace LightsOut
                     if (game.GetGridValue(r, c))
                     {
                         // On
-                        rect.Fill = Brushes.White;
-                        rect.Stroke = Brushes.Black;
+                        rect.Fill = white;
+                        rect.Stroke = black;
                     }
                     else
                     {
                         // Off
-                        rect.Fill = Brushes.Black;
-                        rect.Stroke = Brushes.White;
+                        rect.Fill = black;
+                        rect.Stroke = white;
                     }
                 }
             }
         }
 
-        private void Rect_Tapped(object sender, MouseButtonEventArgs e)
+        async private void Rect_Tapped(object sender, TappedRoutedEventArgs e)
         {
             // Get row and column from Rectangle's Tag
             Rectangle rect = sender as Rectangle;
@@ -113,55 +115,21 @@ namespace LightsOut
 
             if (game.IsGameOver())
             {
-                msgDialog.Show(this, "Congratulations!  You've won!", "Lights Out!",
-                    MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageDialog msgDialog = new MessageDialog("Congratulations! You Won!", "Lights Out");
+                msgDialog.Commands.Add(new UICommand("OK"));
+                await msgDialog.ShowAsync();
             }
         }
 
-        private void HelpAbout_Click(object sender, RoutedEventArgs e)
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
         {
-            AboutWindow about = new AboutWindow();
-            about.Owner = this;
-            about.ShowDialog();
+            this.Frame.Navigate(typeof(AboutPage));
         }
 
-        private void SizeChanged_Click(object sender, RoutedEventArgs e)
-        {
-            MenuItem menuItem = sender as MenuItem;
-            SizeThree.IsChecked = false;
-            SizeFive.IsChecked = false;
-            SizeSeven.IsChecked = false;
-            switch (menuItem.Name)
-            {
-                case "SizeThree":
-                    SizeThree.IsChecked = true;
-                    game.GridSize = 3;
-                    break;
-                case "SizeFive":
-                    SizeFive.IsChecked = true;
-                    game.GridSize = 5;
-                    break;
-                case "SizeSeven":
-                    SizeSeven.IsChecked = true;
-                    game.GridSize = 7;
-                    break;
-            }
-
-            CreateGrid();
-            DrawGrid();
-        }
-
-        private void MenuExit_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
-        private void MenuNew_Click(object sender, RoutedEventArgs e)
+        private void NewGameButton_Click(object sender, RoutedEventArgs e)
         {
             game.NewGame();
             DrawGrid();
         }
-    }
-}
     }
 }
