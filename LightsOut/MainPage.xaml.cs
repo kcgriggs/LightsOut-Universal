@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Input;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -28,7 +29,9 @@ namespace LightsOut
     public sealed partial class MainPage : Page
     {
         private LightsOutGame game;
+        SettingsPage settingsPage;
         private string json;
+        private SolidColorBrush tileColor;
         public MainPage()
         {
             this.InitializeComponent();
@@ -39,6 +42,7 @@ namespace LightsOut
                 json = ApplicationData.Current.LocalSettings.Values["json"] as String;
                 game = JsonConvert.DeserializeObject<LightsOutGame>(json);
             }
+            tileColor = new SolidColorBrush(Windows.UI.Colors.White);
             CreateGrid();
             DrawGrid();
         }
@@ -57,8 +61,7 @@ namespace LightsOut
                 {
                     Rectangle rect = new Rectangle();
                     SolidColorBrush black = new SolidColorBrush(Windows.UI.Colors.Black);
-                    SolidColorBrush white = new SolidColorBrush(Windows.UI.Colors.White);
-                    rect.Fill = white;
+                    rect.Fill = tileColor;
                     rect.Width = rectSize + 1;
                     rect.Height = rect.Width + 1;
                     rect.Stroke = black;
@@ -82,7 +85,6 @@ namespace LightsOut
         private void DrawGrid()
         {
             SolidColorBrush black = new SolidColorBrush(Windows.UI.Colors.Black);
-            SolidColorBrush white = new SolidColorBrush(Windows.UI.Colors.White);
             int index = 0;
 
             // Set the colors of the rectangles
@@ -96,14 +98,14 @@ namespace LightsOut
                     if (game.GetGridValue(r, c))
                     {
                         // On
-                        rect.Fill = white;
+                        rect.Fill = tileColor;
                         rect.Stroke = black;
                     }
                     else
                     {
                         // Off
                         rect.Fill = black;
-                        rect.Stroke = white;
+                        rect.Stroke = tileColor;
                     }
                 }
             }
@@ -146,6 +148,7 @@ namespace LightsOut
             ApplicationData.Current.LocalSettings.Values["gridSize"] = game.GridSize;
             json = JsonConvert.SerializeObject(game);
             ApplicationData.Current.LocalSettings.Values["json"] = json;
+            ApplicationData.Current.LocalSettings.Values["tileColor"] = tileColor.Color.ToString();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -157,6 +160,15 @@ namespace LightsOut
                 DrawGrid();
                 json = null;
             }
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("tileColor"))
+            {
+                string hexColor = ApplicationData.Current.LocalSettings.Values["tileColor"] as String;
+                if (tileColor.Color != ConvertHexToBrush(hexColor).Color)
+                {
+                    tileColor.Color = ConvertHexToBrush(hexColor).Color;
+                    DrawGrid();
+                }
+            }
             if (json != null)
             {
                 game = JsonConvert.DeserializeObject<LightsOutGame>(json);
@@ -166,6 +178,18 @@ namespace LightsOut
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SettingsPage));
+        }
+
+        private SolidColorBrush ConvertHexToBrush(string hex)
+        {
+            hex = hex.Replace("#", string.Empty);
+            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
+            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
+            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
+            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
+            SolidColorBrush newBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
+            return newBrush;
+
         }
     }
 }

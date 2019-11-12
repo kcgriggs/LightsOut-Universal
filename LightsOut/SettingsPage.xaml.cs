@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -46,6 +47,12 @@ namespace LightsOut
                         break;
                 }
             }
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("tileColor"))
+            {
+                string hexColor = ApplicationData.Current.LocalSettings.Values["tileColor"] as String;
+                TileColorPicker.Color = ConvertHexToBrush(hexColor).Color;
+            }
+
         }
 
         private void X3RadioButton_Click(object sender, RoutedEventArgs e)
@@ -67,6 +74,22 @@ namespace LightsOut
                 ApplicationData.Current.LocalSettings.Values["gridSize"] = 5;
                 this.x3RadioButton.IsChecked = false;
                 this.x4RadioButton.IsChecked = false;
+        }
+
+        private void ColorPicker_ColorChanged(ColorPicker sender, ColorChangedEventArgs args)
+        {
+            ApplicationData.Current.LocalSettings.Values["tileColor"] = TileColorPicker.Color.ToString();
+        }
+        private SolidColorBrush ConvertHexToBrush(string hex)
+        {
+            hex = hex.Replace("#", string.Empty);
+            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
+            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
+            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
+            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
+            SolidColorBrush newBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
+            return newBrush;
+
         }
     }
 }

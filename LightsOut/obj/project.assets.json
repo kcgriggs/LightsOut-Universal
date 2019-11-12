@@ -8262,11 +8262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
+      "projectUniqueName": "C:\\Users\\kcgym\\OneDrive\\Documents\\GitHub\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
       "projectName": "LightsOut",
-      "projectPath": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
+      "projectPath": "C:\\Users\\kcgym\\OneDrive\\Documents\\GitHub\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
       "packagesPath": "C:\\Users\\kcgym\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\obj\\",
+      "outputPath": "C:\\Users\\kcgym\\OneDrive\\Documents\\GitHub\\LightsOut-Universal\\LightsOut\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

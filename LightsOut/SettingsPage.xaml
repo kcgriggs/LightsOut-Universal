@@ -6,13 +6,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="350" Width="300">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="572" Width="386">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,43,0,0" Text="Board Size" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <RadioButton Name="x3RadioButton" Content="3 x 3" Margin="30,80,0,0" VerticalAlignment="Top" Click="X3RadioButton_Click"/>
-        <RadioButton Name="x4RadioButton" Content="4 x 4" Margin="30,112,0,0" VerticalAlignment="Top" Click="X4RadioButton_Click"/>
-        <RadioButton Name="x5RadioButton" Content="5 x 5" Margin="30,143,0,0" Click="X5RadioButton_Click" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="158,19,0,0" Text="Board Size" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <RadioButton Name="x3RadioButton" Content="3 x 3" Margin="28,38,0,0" VerticalAlignment="Top" Click="X3RadioButton_Click" FontSize="12"/>
+        <RadioButton Name="x4RadioButton" Content="4 x 4" Margin="28,70,0,0" VerticalAlignment="Top" Click="X4RadioButton_Click" FontSize="12"/>
+        <RadioButton Name="x5RadioButton" Content="5 x 5" Margin="28,102,0,0" VerticalAlignment="Top" Click="X5RadioButton_Click" FontSize="12"/>
+        <ColorPicker Name="TileColorPicker" HorizontalAlignment="Center" Margin="0,169,0,122" ColorSpectrumShape="Box" IsColorSliderVisible="False"
+                     IsColorPreviewVisible="True" IsColorChannelTextInputVisible="False" IsHexInputVisible="False" ColorChanged="ColorPicker_ColorChanged" Width="331"/>
+        <TextBlock HorizontalAlignment="Left" Margin="161,134,0,0" Text="Tile Color" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
