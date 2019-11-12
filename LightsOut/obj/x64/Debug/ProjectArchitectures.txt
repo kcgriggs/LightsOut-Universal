@@ -1,0 +1,1 @@
+C:\Users\cgriggs1\Documents\GitHub\LightsOut-Universal\LightsOut\LightsOut.csproj;x64

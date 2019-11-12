@@ -8,9 +8,9 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>4fdd595e-1376-477a-8e54-92d2143161f1</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Casey</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\obj\x86\Debug\</IntermediateOutputPath>
+    <PackageIdentityName>6f3a1bb1-31ac-4f14-8fc6-a222a1964e3e</PackageIdentityName>
+    <PackageIdentityPublisher>CN=cgriggs1</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,153 +18,165 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>BF932F0FFA0052D4148657226F6D3958A8305ABE8594D4CC5C7BD2AD6D8E08BA</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>4fdd595e-1376-477a-8e54-92d2143161f1_1.0.0.0_x86__eha0bsahbwbra</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>4fdd595e-1376-477a-8e54-92d2143161f1_eha0bsahbwbra!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>4fdd595e-1376-477a-8e54-92d2143161f1</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Casey</RegisteredPackagePublisher>
+    <LayoutDir>C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>102EB976CC62AEE78D9B3D35D7400CEAB2151815E1FAF1CE0F61DC9FFDBB85F8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6f3a1bb1-31ac-4f14-8fc6-a222a1964e3e_1.0.0.0_x86__30qfmvdamt80g</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6f3a1bb1-31ac-4f14-8fc6-a222a1964e3e_30qfmvdamt80g!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6f3a1bb1-31ac-4f14-8fc6-a222a1964e3e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=cgriggs1</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-05T03:47:40.391</Modified>
+      <Modified>2019-11-12T08:20:06.909</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\LightsOut.exe">
-      <PackagePath>entrypoint\LightsOut.exe</PackagePath>
-      <Modified>2019-11-05T03:47:38.331</Modified>
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\Lights Out.exe">
+      <PackagePath>entrypoint\Lights Out.exe</PackagePath>
+      <Modified>2019-11-12T08:19:05.328</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\kcgym\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-11-09T06:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2019-03-13T03:22:24.000</Modified>
+      <Modified>2019-07-22T20:01:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T23:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\lightbulb.jpg">
+      <PackagePath>lightbulb.jpg</PackagePath>
+      <Modified>2019-11-12T03:37:11.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-11-05T03:42:57.670</Modified>
+      <Modified>2019-11-12T03:37:38.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.557</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.634</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.656</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-09-21T17:31:41.642</Modified>
+      <Modified>2019-11-12T03:37:11.678</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\LightsOut.xr.xml">
-      <PackagePath>LightsOut.xr.xml</PackagePath>
-      <Modified>2019-11-05T03:47:37.896</Modified>
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\Lights Out.xr.xml">
+      <PackagePath>Lights Out.xr.xml</PackagePath>
+      <Modified>2019-11-12T08:19:05.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-05T03:47:37.912</Modified>
+      <Modified>2019-11-12T08:20:06.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\AboutPage.xbf">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\AboutPage.xbf">
       <PackagePath>AboutPage.xbf</PackagePath>
-      <Modified>2019-11-05T03:47:37.912</Modified>
+      <Modified>2019-11-12T08:20:06.333</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-05T03:47:37.912</Modified>
+      <Modified>2019-11-12T08:20:06.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+      <Modified>2019-11-12T08:20:06.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T22:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-05T03:47:38.816</Modified>
+      <Modified>2019-11-12T08:20:06.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcgym\OneDrive\Documents\2019\FALL\COMP 4450\LightsOut\LightsOut\bin\x86\Debug\Core\LightsOut.exe">
-      <PackagePath>LightsOut.exe</PackagePath>
-      <Modified>2019-11-05T03:47:40.356</Modified>
+    <AppxPackagedFile Include="C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\x86\Debug\Core\Lights Out.exe">
+      <PackagePath>Lights Out.exe</PackagePath>
+      <Modified>2019-11-12T08:20:06.903</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kcgym\\OneDrive\\Documents\\2019\\FALL\\COMP 4450\\LightsOut\\LightsOut\\LightsOut.csproj": {}
+    "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kcgym\\OneDrive\\Documents\\2019\\FALL\\COMP 4450\\LightsOut\\LightsOut\\LightsOut.csproj": {
+    "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kcgym\\OneDrive\\Documents\\2019\\FALL\\COMP 4450\\LightsOut\\LightsOut\\LightsOut.csproj",
+        "projectUniqueName": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
         "projectName": "LightsOut",
-        "projectPath": "C:\\Users\\kcgym\\OneDrive\\Documents\\2019\\FALL\\COMP 4450\\LightsOut\\LightsOut\\LightsOut.csproj",
+        "projectPath": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\LightsOut.csproj",
         "packagesPath": "C:\\Users\\kcgym\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kcgym\\OneDrive\\Documents\\2019\\FALL\\COMP 4450\\LightsOut\\LightsOut\\obj\\",
+        "outputPath": "C:\\Users\\kcgym\\Downloads\\LightsOut-Universal\\LightsOut-Universal\\LightsOut\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -24,24 +24,28 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "uap10.0.17763"
+          "uap10.0.18362"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "uap10.0.17763": {
+          "uap10.0.18362": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "uap10.0.17763": {
+        "uap10.0.18362": {
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.8, )"
+              "version": "[6.2.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

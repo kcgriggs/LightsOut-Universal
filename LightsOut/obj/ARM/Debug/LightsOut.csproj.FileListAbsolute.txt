@@ -1,0 +1,49 @@
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\App.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\AboutPage.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\MainPage.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Lights Out.xr.xml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Lights Out.exe
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Lights Out.pdb
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\resources.pri
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\AppxManifest.xml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Core\AppxManifest.xml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Core\Lights Out.exe
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\LightsOut.build.appxrecipe
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\System.Runtime.dll
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\bin\ARM\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\LightsOut.csprojAssemblyReference.cache
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\App.g.i.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\App.g.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\AboutPage.g.i.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\AboutPage.g.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\MainPage.g.i.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\MainPage.g.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\App.xaml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\AboutPage.xaml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\MainPage.xaml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\App.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\AboutPage.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\MainPage.xbf
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\XamlSaveStateFile.xml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\LightsOut.csproj.CopyComplete
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\Lights Out.exe
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\Lights Out.pdb
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\ResourceHandlingTask.state
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\priconfig.xml
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\priconfig.xml.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\unfiltered.layout.resfiles
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\filtered.layout.resfiles
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\filtered.layout.resfiles.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\excluded.layout.resfiles
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\excluded.layout.resfiles.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\resources.resfiles
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\resources.resfiles.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\pri.resfiles
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\pri.resfiles.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\qualifiers.txt
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\qualifiers.txt.intermediate
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\kcgym\Downloads\LightsOut-Universal\LightsOut-Universal\LightsOut\obj\ARM\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885490160000000.json

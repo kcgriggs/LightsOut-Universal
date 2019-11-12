@@ -6,14 +6,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="297" Width="232">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="350" Width="300">
 
     <RelativePanel>
-        <Canvas Name="boardCanvas">
+        <Canvas Name="boardCanvas" Width="250" Height="250" Margin="24,15,0,0">
 
         </Canvas>
-        <Button Content="About" Click="AboutButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="130,250,10,10"/>
-        <Button Content="New Game" Click="NewGameButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="13,250,0,10" />
+        <Button Content="About" Click="AboutButton_Click" RelativePanel.Below="boardCanvas" Width="65" Margin="220,38,10,10"/>
+        <Button Content="Settings" Click="SettingsButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="118,38,10,10"/>
+        <Button Content="New Game" Click="NewGameButton_Click" RelativePanel.Below="boardCanvas" Width="90" Margin="15,38,0,10" />
 
     </RelativePanel>
 </Page>
+

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Input;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -26,10 +28,17 @@ namespace LightsOut
     public sealed partial class MainPage : Page
     {
         private LightsOutGame game;
+        private string json;
         public MainPage()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
             game = new LightsOutGame();
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("json"))
+            {
+                json = ApplicationData.Current.LocalSettings.Values["json"] as String;
+                game = JsonConvert.DeserializeObject<LightsOutGame>(json);
+            }
             CreateGrid();
             DrawGrid();
         }
@@ -39,7 +48,7 @@ namespace LightsOut
             // Remove all previously-existing rectangles
             boardCanvas.Children.Clear();
 
-            int rectSize = (int)boardCanvas.Width / game.GridSize;
+            int rectSize = Convert.ToInt32(boardCanvas.Width / game.GridSize);
 
             // Turn entire grid on and create rectangles to represent it
             for (int r = 0; r < game.GridSize; r++)
@@ -130,6 +139,33 @@ namespace LightsOut
         {
             game.NewGame();
             DrawGrid();
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            ApplicationData.Current.LocalSettings.Values["gridSize"] = game.GridSize;
+            json = JsonConvert.SerializeObject(game);
+            ApplicationData.Current.LocalSettings.Values["json"] = json;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (game.GridSize != Convert.ToInt32(ApplicationData.Current.LocalSettings.Values["gridSize"]))
+            {
+                game.GridSize = Convert.ToInt32(ApplicationData.Current.LocalSettings.Values["gridSize"]);
+                CreateGrid();
+                DrawGrid();
+                json = null;
+            }
+            if (json != null)
+            {
+                game = JsonConvert.DeserializeObject<LightsOutGame>(json);
+            }
+        }
+
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SettingsPage));
         }
     }
 }

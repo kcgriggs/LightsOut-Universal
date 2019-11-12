@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace LightsOut
 {
@@ -33,10 +34,29 @@ namespace LightsOut
             }
         }
 
+        public string Grid
+        {
+            get
+            {
+                return GridToString();
+            }
+            set
+            {
+                StringToGrid(value);
+            }
+        }
+
         public LightsOutGame()
         {
             rand = new Random();
-            GridSize = MinGridSize;
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("gridSize"))
+            {
+                GridSize = Convert.ToInt32(ApplicationData.Current.LocalSettings.Values["gridSize"]);
+            }
+            else
+            {
+                GridSize = MinGridSize;
+            }
         }
 
         // Returns the grid value at the given row and column
@@ -95,6 +115,47 @@ namespace LightsOut
 
             // All values must be false (off)
             return true;
+        }
+
+        string GridToString()
+        {
+            string tempGrid = "";
+            for (int i = 0; i < gridSize; i++)
+            {
+                for (int j = 0; j < gridSize; j++)
+                {
+                    if (grid[i, j])
+                    {
+                        tempGrid += "T";
+                    }
+                    else
+                    {
+                        tempGrid += "F";
+                    }
+                }
+            }
+            return tempGrid.ToString();
+        }
+
+        void StringToGrid(string s)
+        {
+            int stringIndex = 0;
+            for (int i = 0; i < gridSize; i++)
+            {
+                for (int j = 0; j < gridSize; j++)
+                {
+                    if (s[stringIndex] == 'T')
+                    {
+                        grid[i, j] = true;
+                        stringIndex++;
+                    }
+                    else
+                    {
+                        grid[i, j] = false;
+                        stringIndex++;
+                    }
+                }
+            }
         }
     }
 }
